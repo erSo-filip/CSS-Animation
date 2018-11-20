@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cog {
+  width: 80px;
+  transition: all 1.5s ease-in-out;
+}
+.cog:hover
+{
+  transform: rotate(720deg);
+  cursor: pointer;
+}

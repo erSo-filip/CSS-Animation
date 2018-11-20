@@ -1,0 +1,70 @@
+body {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 5rem;
+  background: #2c333a;
+}
+
+div {
+  width: 80%;
+  margin: 4rem auto;
+  text-align: center;
+  perspective: 800px;
+}
+
+span {
+  display: inline-block;
+  margin-left: -20px;
+  color: #77c6bc;
+  transform-origin: 50% 70%;
+  transform: scale(0.4);
+}
+span:nth-child(1) {
+  animation: flip1 1s both, filp2 1s ease-in;
+}
+span:nth-child(2) {
+
+  animation: flip1 1s 1s both, filp2 1s 1s ease-in;
+}
+
+span:hover
+{
+animation-name: flip;
+}
+
+@keyframes flip
+{
+  from
+  {
+ transform: scale(1);
+  }
+  to 
+  {
+  transform: scale(1.5);
+  }
+}
+@keyframes flip1
+{
+  from
+  {
+    transform: scale(0.4) rotate(0deg);
+  }
+  to 
+  {
+    transform: scale(1) rotate(360deg);
+  }
+}
+@keyframes flip2
+{
+  0%
+  {
+    transform: rotatey(0deg);
+  }
+  50%
+  {
+    transform: rotatey(180deg);
+  }
+  100%
+  {
+    transform: rotatey(360deg);
+  }
+}
